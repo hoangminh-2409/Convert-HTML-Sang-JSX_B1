@@ -30,7 +30,7 @@ const Accordion = ({
                     setIsExpanded((prevIsExpanded) => !prevIsExpanded)
                 }
             >
-                {/* {controllerElement(isExpanded)} */}
+                {controllerElement(isExpanded)}
             </div>
             {isExpanded && (
                 <div id={contentDescription} className="w-full">

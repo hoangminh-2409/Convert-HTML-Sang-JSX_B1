@@ -1,6 +1,6 @@
 import Accordion from "./Accordion"
 import triangle_down from "../assets/image.jpg";
-
+import triangle_up from "../assets/up.png"
 export default function MenuExample() {
     return (
         <Accordion
@@ -8,9 +8,8 @@ export default function MenuExample() {
                 <button className="w-full flex flex-row bg-gradient-to-tr from-red-400 to-orange-400 p-2 rounded-lg cursor-pointer">
                     {isExpanded ? "Hide" : "Show"} Content
                     <img
-                        src={triangle_down}
-                        alt="triangle"
-                        className={isExpanded ? "rotate-180" : ""}
+                        src={isExpanded? triangle_down : triangle_up}
+                           style={{width:'15px', height:'20px', marginLeft: '5px', marginTop:'5px'}}
                     />
                 </button>
             )}
